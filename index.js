@@ -8,8 +8,9 @@ function createIssue() {
 }
 
 function showResults(json) {
-  const results = JSON.parse(json);
-  const html = `<h3>Results:</h3>`;
+  // const results = JSON.parse(json);
+  const html = `<h3>Results:</h3>
+  <a href="${json.html_url}">${json.html_url}</a>`;
   // document.getElementById('results').innerHTML = details;
 }
 
