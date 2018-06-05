@@ -11,7 +11,10 @@ function showIssues(json) {
 function createIssue() {
   const path = 'https://api.github.com/repos/';
   const repo = 'rhhaynes/javascript-fetch-lab/issues';
-  const issueData = {body: 'New issue.'};
+  const issueData = {
+    title: 'My First API Issue',
+    body:  'I hope this works.'
+  };
   fetch( path+repo, {
     method:  'post',
     body:    JSON.stringify(issueData),
