@@ -15,6 +15,11 @@ function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab/forks';
   const url = path + repo;
   //use fetch to fork it!
+  fetch(url, {
+    headers: {Authorization: `token ${getToken()}`}
+  })
+  .then(res => res.json())
+  .then(json => console.log(json));
 }
 
 function getToken() {
