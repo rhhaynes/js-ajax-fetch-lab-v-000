@@ -8,6 +8,7 @@ function createIssue() {
 }
 
 function showResults(json) {
+  document.getElementById('results').innerHTML = JSON.parse(json);
 }
 
 function forkRepo() {
