@@ -1,4 +1,11 @@
 function getIssues() {
+  const path = 'https://api.github.com/repos/';
+  const repo = 'rhhaynes/javascript-fetch-lab/issues';
+  fetch( path+repo, {
+    headers: {Authorization: getToken()}
+  })
+  .then(res => res.json())
+  .then(json => showIssues(json));
 }
 
 function showIssues(json) {
