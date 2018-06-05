@@ -8,8 +8,10 @@ function createIssue() {
 }
 
 function showResults(json) {
+  const results = JSON.parse(json);
+  const html = `<h3>Results:</h3>`;
   debugger;
-  // document.getElementById('results').innerHTML = JSON.parse(json);
+  // document.getElementById('results').innerHTML = details;
 }
 
 function forkRepo() {
