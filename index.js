@@ -7,6 +7,12 @@ function showIssues(json) {
 function createIssue() {
   const path = 'https://api.github.com/repos/';
   const repo = 'rhhaynes/javascript-fetch-lab/issues';
+  fetch( path+repo, {
+    method: 'post',
+    headers: {Authorization: getToken()}
+  })
+  .then(res => res.json())
+  .then(json => showIssues(json));
 }
 
 function showResults(json) {
