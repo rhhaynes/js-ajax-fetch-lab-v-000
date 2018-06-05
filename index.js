@@ -22,7 +22,7 @@ function forkRepo() {
   //use fetch to fork it!
   fetch(url, {
     method: 'POST',
-    headers: {Authorization: `token ${getToken()}`}
+    headers: {Authorization: getToken()}
   })
   .then(res => res.json())
   .then(json => showResults(json));
@@ -31,5 +31,5 @@ function forkRepo() {
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  return '0fdff22a80a9729dc7e5c1028601c077982ff4c1';
+  return 'token 0fdff22a80a9729dc7e5c1028601c077982ff4c1';
 }
