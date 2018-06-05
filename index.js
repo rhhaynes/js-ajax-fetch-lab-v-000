@@ -10,7 +10,7 @@ function createIssue() {
 function showResults(json) {
   const obj  = JSON.parse(json);
   const html = `<h3>Results:</h3>
-  <a href="${obj.html_url}">${obj.html_url}</a>`;
+    <a href="${obj.html_url}">${obj.html_url}</a>`;
   document.getElementById('results').innerHTML = html;
 }
 
