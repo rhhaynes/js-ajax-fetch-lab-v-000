@@ -2,6 +2,10 @@ function getIssues() {
 }
 
 function showIssues(json) {
+  const obj  = JSON.parse(json);
+  const html = `<h3>Issues:</h3>
+    <a href="${obj.html_url}">${obj.html_url}</a>`;
+  document.getElementById('issues').innerHTML = html;
 }
 
 function createIssue() {
