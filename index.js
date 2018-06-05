@@ -11,8 +11,7 @@ function getIssues() {
 function showIssues(json) {
   const issues = JSON.parse(json);
   const html = '<h3>Issues:</h3><ul>' + issues.map(issue =>
-    `<li><strong>${issue.}</strong><br/>
-    <a href="${obj[0].html_url}">${obj[0].html_url}</a>`;
+    `<li><strong>${issue.title}</strong><br/>${issue.body}</li><br/>`).join('')+'</ul>';
   document.getElementById('issues').innerHTML = html;
 }
 
