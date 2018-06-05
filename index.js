@@ -13,7 +13,7 @@ function createIssue() {
   const repo = 'rhhaynes/javascript-fetch-lab/issues';
   const issueData = {
     title: 'My First API Issue',
-    body:  'I hope this works.'
+    body:  'test body'
   };
   fetch( path+repo, {
     method:  'post',
