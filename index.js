@@ -12,7 +12,7 @@ function createIssue() {
   const path = 'https://api.github.com/repos/';
   const repo = 'rhhaynes/javascript-fetch-lab/issues';
   const issueData = {
-    title: 'My First API Issue',
+    title: 'test title',
     body:  'test body'
   };
   fetch( path+repo, {
