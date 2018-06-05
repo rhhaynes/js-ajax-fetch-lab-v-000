@@ -21,6 +21,7 @@ function forkRepo() {
   const url = path + repo;
   //use fetch to fork it!
   fetch(url, {
+    method: 'POST',
     headers: {Authorization: `token ${getToken()}`}
   })
   .then(res => res.json())
