@@ -6,6 +6,7 @@ function showIssues(json) {
 
 function createIssue() {
   const path = 'https://api.github.com/repos/';
+  const repo = '/';
   /repos/:owner/:repo/issues
 }
 
