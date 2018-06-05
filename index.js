@@ -6,8 +6,7 @@ function showIssues(json) {
 
 function createIssue() {
   const path = 'https://api.github.com/repos/';
-  const repo = '/';
-  /repos/:owner/:repo/issues
+  const repo = 'rhhaynes/javascript-fetch-lab/issues';
 }
 
 function showResults(json) {
