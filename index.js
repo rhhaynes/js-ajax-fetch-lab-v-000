@@ -11,9 +11,9 @@ function showResults(json) {
 }
 
 function forkRepo() {
-  const path = '';
-  /repos/:owner/:repo/forks
-  const repo = 'learn-co-curriculum/javascript-fetch-lab';
+  const path = 'https://api.github.com/repos/rhhaynes/';
+  const repo = 'learn-co-curriculum/javascript-fetch-lab/forks';
+  const url = path + repo;
   //use fetch to fork it!
 }
 
