@@ -11,7 +11,7 @@ function getIssues() {
 function showIssues(json) {
   const issues = JSON.parse(json);
   const html = '<h3>Issues:</h3><ul>' + issues.map(issue =>
-    `<li>
+    `<li><strong>${issue.}</strong><br/>
     <a href="${obj[0].html_url}">${obj[0].html_url}</a>`;
   document.getElementById('issues').innerHTML = html;
 }
