@@ -8,6 +8,7 @@ function createIssue() {
 }
 
 function showResults(json) {
+  debugger;
   const results = JSON.parse(json);
   const html = `<h3>Results:</h3>`;
   debugger;
