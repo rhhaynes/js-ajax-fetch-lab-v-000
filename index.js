@@ -28,7 +28,7 @@ function createIssue() {
     headers: {Authorization: getToken()}
   })
   .then(res => res.json())
-  .then(json => showIssues(json));
+  .then(json => getIssues());
 }
 
 function showResults(json) {
